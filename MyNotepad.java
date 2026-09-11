@@ -2,7 +2,7 @@ import java.awt.*;
 import javax.swing.*;
 import javax.swing.event.*;
 import java.io.*;
-class JavaNotepad extends JFrame
+class MyNotepad extends JFrame
 {
 JMenuBar mb1;
 JMenu m1,m2,m3;
@@ -10,7 +10,7 @@ JTextArea t1;
 JMenuItem i1,i2,i3,i4,i5,i6,i7,i8,i9,i10;
 JFileChooser jf;
 String fname;
-JavaNotepad()
+MyNotepad()
 {
 fname = null;
 setVisible(true);
@@ -103,6 +103,6 @@ fos.write(t1.getText().getBytes());
 }
 public static void main(String arg[])
 {
-new JavaNotepad();
+new MyNotepad();
 }
 }
